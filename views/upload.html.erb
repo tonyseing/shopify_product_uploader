@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+</head>
+  <body>
+    <%= flash[:notice]  %>
+    <br/>
+    <form action="/upload" method="post"  enctype="multipart/form-data">
+      <div>
+        <span>Name</span>
+        <input type="text" placeholder="title" name="product[title]" / >
+      </div>
+
+      <div>
+        <span>Description</span>
+        <textarea placeholder="title" name="product[description]">
+          </textarea>
+      </div>
+
+      <div>
+        <span>Category</span>
+        <select type="text" placeholder="product_type" name="product[product_type]" >
+          <option value="Drawing">Drawing</option>
+          <option value="Painting">Painting</option>
+          <option value="Photography">Photography</option>
+          <option value="Sculpture">Sculpture</option>
+          <option value="Film">Film</option>
+        </select>
+      </div>
+      
+      <input type="hidden" name="vendor" value="Test Artist">
+      <input type="submit" />
+    </form>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
