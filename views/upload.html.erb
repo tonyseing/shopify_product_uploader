@@ -20,8 +20,7 @@
 
       <div>
         <span>Description</span>
-        <textarea placeholder="title" name="product[description]">
-          </textarea>
+        <textarea placeholder="title" name="product[description]"></textarea>
       </div>
 
       <div>
@@ -34,7 +33,18 @@
           <option value="Film">Film</option>
         </select>
       </div>
-      
+      <div>
+      Upload a main image of your art
+      <input type="file" name="product[images][]" accept="image/*" />
+      </div>
+      <div>
+         Upload more images of your art
+         <input type="file" name="product[images][]" accept="image/*" />
+         <input type="file" name="product[images][]" accept="image/*" />
+         <input type="file" name="product[images][]" accept="image/*" />
+      </div>
+    
+      </div>
       <input type="hidden" name="vendor" value="Test Artist">
       <input type="submit" />
     </form>
