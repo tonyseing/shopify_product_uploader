@@ -59,6 +59,7 @@ PLATFORMS
 
 DEPENDENCIES
   firebase
+  pry
   shopify_api
   sinatra
   sinatra-flash
