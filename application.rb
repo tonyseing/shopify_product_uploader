@@ -31,7 +31,7 @@ end
 
 get '/signout' do
   session['user'] = nil
-  redirect '/'
+  redirect '/signin'
 end
 
 post '/signup' do

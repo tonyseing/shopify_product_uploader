@@ -1,10 +1,18 @@
 header {
     background-color: #fff;
+    height: 86px;
+}
 
+.logout {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: 30px;
+  
 }
 
 .logo {
-    margin-top: 1%;
+    margin-top: 20px;
     margin-left: 1%;
 }
 
