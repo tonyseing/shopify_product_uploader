@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link href="sellers.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header style="background-color: #fff;">
+      <a href="#"><img class="logo" src="http://cdn.shopify.com/s/files/1/0715/6883/t/1/assets/Palette_Logo.png" /></a>
+    </header>
+    <div class="content">
+      <div class="content-inner">
+        <form action="/signup" method="post"  enctype="multipart/form-data">
+          <div class="field">
+            <span>Name</span><br/>
+            <input type="text" placeholder="Name"
+            name="user[name]" class="form-control" required / >
+          </div>
+          
+          <div class="field">
+            <span>Email</span><br/>
+            <input type="email" placeholder="Email"
+                   name="user[email]" class="form-control" required / >
+          </div>
+          
+          <div class="field">
+            <span>Password</span><br/>
+            <input type="password" placeholder="Password"
+            name="user[password]" class="form-control" required></input>
+          </div>
+
+          <div class="field">
+            <input type="submit" class="btn btn-success" />
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

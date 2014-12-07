@@ -22,19 +22,17 @@
           <div class="field">
             <span>Name</span><br/>
             <input type="text" placeholder="Artwork Title"
-            name="product[title]" class="form-control" required / >
+            name="product[title]" class="form-control" / >
           </div>
           
           <div class="field">
             <span>Description</span><br/>
-            <textarea placeholder="Artwork Description"
-            name="product[description]" class="form-control" required></textarea>
+            <textarea placeholder="Artwork Description" name="product[description]" class="form-control"></textarea>
           </div>
         
           <div class="field">
             <span>Category</span><br/>
-            <select type="text" placeholder="product_type"
-                    name="product[product_type]" class="form-control" required>
+            <select type="text" placeholder="product_type" name="product[product_type]" class="form-control">
               <option value="Drawing">Drawing</option>
               <option value="Painting">Painting</option>
               <option value="Photography">Photography</option>
@@ -43,27 +41,21 @@
             </select>
           </div>
           <div class="field">
-            <span>Price</span><br/>
-            <input type="number" placeholder="Price"
-            name="product[price]" class="form-control" required></input>
-          </div>
-
-
-          <div class="field">
             <span>Upload a main image of your art</span><br/>
-            <input type="file" name="product[images][]" 
-            accept="image/*" class="form-control"  />
+            <input type="file" name="product[images][]"
+            accept="image/*" class="form-control" />
           </div>
           <div class="field">
             Upload more images of your art
             <input type="file" name="product[images][]"
-            accept="image/*" class="form-control"  />
+            accept="image/*" class="form-control" />
             <input type="file" name="product[images][]"
-            accept="image/*"  class="form-control"  />
+            accept="image/*"  class="form-control" />
             <input type="file" name="product[images][]"
             accept="image/*"  class="form-control" />
           </div>
         
+          <input type="hidden" name="vendor" value="Test Artist">
           <div class="field">
             <input type="submit" class="btn btn-success" />
           </div>
