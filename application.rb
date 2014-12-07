@@ -71,6 +71,9 @@ get '/' do
 end
 
 get '/upload' do
+  if session["user"].nil?
+    redirect '/signin'
+  end
   erb :"upload.html"
 end
 
